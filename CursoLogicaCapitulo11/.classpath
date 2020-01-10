@@ -8,5 +8,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="libs/commons-email-1.5.jar"/>
 	<classpathentry kind="lib" path="libs/javax.mail.jar"/>
+	<classpathentry kind="lib" path="libs/algaworks-console-1.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
