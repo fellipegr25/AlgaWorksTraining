@@ -58,4 +58,16 @@ public class ListaAlunos {
 		lista[tamanhoLista] = null;
 	}
 	
+	void ordenar() {
+		for (int i = 0; i < tamanhoLista; i++) {
+			Aluno alunoPosicaoBase = lista[i];
+			int indicePosicaoBase = i;
+			
+			while (indicePosicaoBase > 0) {
+				int indicePosicaoAnterior = indicePosicaoBase - 1;
+				Aluno alunoPosicaoAnterior = lista[indicePosicaoAnterior];
+			}
+		}
+	}
+	
 }
