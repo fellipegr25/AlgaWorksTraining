@@ -66,7 +66,21 @@ public class ListaAlunos {
 			while (indicePosicaoBase > 0) {
 				int indicePosicaoAnterior = indicePosicaoBase - 1;
 				Aluno alunoPosicaoAnterior = lista[indicePosicaoAnterior];
+				
+				Boolean alunoPosicaoAnteriorVemDepoisDe = alunoPosicaoAnterior == null ||
+						alunoPosicaoAnterior.posicaoDepoisDe(alunoPosicaoBase);
+				
+				if (alunoPosicaoAnteriorVemDepoisDe) {
+					lista[indicePosicaoBase] = lista[indicePosicaoAnterior];
+					
+					indicePosicaoBase--;
+				} else {
+					break;
+				}
 			}
+			
+			lista[indicePosicaoBase] = alunoPosicaoBase;
+			
 		}
 	}
 	
